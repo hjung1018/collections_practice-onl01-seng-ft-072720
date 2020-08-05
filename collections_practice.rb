@@ -2,8 +2,10 @@ def sort_array_asc(array)
   array.sort
 end
 
-def sort_array_desc_array(array)
-  array.sort.reverse
+def sort_array_desc(array)
+  array.sort do | left, right|
+    right <=> left
+  end
 end
 
 # The sort method yields to a block with two elements. That block is the comparator, so it should compare the two elements and return 0 if they are the same, -1 if the first is less than the second, and 1 if the first is greater than the second
