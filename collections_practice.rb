@@ -6,7 +6,8 @@ def sort_array_desc_array(array)
   array.sort.reverse
 end
 
-def sort_array_char_count(array)
+# The sort method yields to a block with two elements. That block is the comparator, so it should compare the two elements and return 0 if they are the same, -1 if the first is less than the second, and 1 if the first is greater than the second
+# def sort_array_char_count(array)
   array.sort do |a, b|
     if a.length > b.length
       1
