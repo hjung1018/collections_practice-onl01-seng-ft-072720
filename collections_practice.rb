@@ -26,4 +26,4 @@ end
   array
 end
 end
-filter_parameter_logging
+
